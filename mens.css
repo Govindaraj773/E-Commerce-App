@@ -1,0 +1,121 @@
+h1{
+    font-size: 28px;
+    font-weight: bolder;
+}
+#grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+img {
+    width: 50%;
+}
+
+.name {
+    font-size: 15px;
+    margin-top: 0px;
+}
+.price1 {
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: 500;
+}
+#links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+    box-shadow: 2px 2px 5px 5px rgb(235, 235, 235);
+  }
+  
+  #links > div {
+    display: flex;
+    list-style: none;
+  }
+  #links a {
+    text-decoration: none;
+    color: teal;
+    font-size: 30px;
+  }
+  .moneyChange{
+      display: flex;
+  }
+  .moneyChange>button{
+      width: 10px;
+      height: 30px;
+      text-align: center;
+      padding: 5px 20px 10px 10px;
+      font-weight: bold;
+  }
+  .moneyChange>p{
+      margin: 5px 10px;
+  }
+  .nav{
+      display: flex;
+      padding: 20px;
+  }
+  .nav>.totalNum{
+      width: 50%;
+      display: flex;
+      float: left;
+      margin-left: 50%;
+  }
+  .totalNum>p{
+      font-size: 18px;
+      margin-left: 10px;
+  }
+  .promo{
+      width: 50%;
+  }
+  .promo>input{
+      padding: 10px 10px;
+      border-radius: 5px;
+  }
+  .promo>button{
+      padding: 10px;
+      margin-left: 10px;
+      background-color: teal;
+      border: none;
+      color: white;
+      border-radius: 8px;
+  }
+  #deleteItem{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: teal;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  .btns{
+    display: flex;
+  }
+
+  
+form {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 50px;
+    box-shadow: 0px 0px 2px 2px gainsboro;
+    padding: 30px;
+}
+
+input[type=submit] {
+    background-color: teal;
+    color: white;
+    border-radius: 10px;
+    font-size: 17px;
+    width: 100%;
+}
+
+input {
+    width: 97%;
+    margin: 10px 10px 10px 0px;
+    padding: 10px 5px;
+    font-size: 12px;
+    color: gray;
+    border-radius: 3px;
+    border: 1px solid gray;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="mens.css" />
+
+</head>
+
+<body>
+    <div id="links">
+        <div><a href="index.html">Mens Page</a></div>
+        <div><a href="womens.html">Womens Page</a></div>
+        <div><a href="cart.html">Cart Page</a></div>
+    </div>
+    <form>
+        <label for="name">name</label><br />
+        <input type="text" name="name" id="name" placeholder="Enter name"><br />
+        <label for="cardNumber">Card Number</label><br />
+        <input type="Number" name="cardNumber" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="8" minlength="8"><br />
+        <label for="cvv">CVV Number</label><br />
+        <input type="Number" name="cvv" id="cvv" placeholder="XXX" maxlength="3" minlength="3"><br />
+        <label for="date">Expiry Date</label><br />
+        <input type="date" name="date" id="date" placeholder="XX/XX"><br />
+        <input type="submit" value="Make Payment">
+    </form>
+</body>
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",submitFun);
+
+    function submitFun(event){
+        event.preventDefault();
+        let name=document.querySelector("#name").value;
+        let cardNumber=document.querySelector("#cardNumber").value;
+        let cvv=document.querySelector("#cvv").value;
+        let date=document.querySelector("#date").value;
+        if(cardNumber=="1000100010001000" && cvv=="123" && date=="2022-06-15"){
+            location.href="otp.html";
+        }else{
+            alert("Check Your Card Details Again....")
+        }
+    }
+
+
+
+</script>

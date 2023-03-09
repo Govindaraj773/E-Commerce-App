@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Page</title>
+    <link rel="stylesheet" href="mens.css" />
+
+</head>
+<body>
+    <div id="links">
+        <div><a href="index.html">Mens Page</a></div>
+        <div><a href="womens.html">Womens Page</a></div>
+        <div><a href="cart.html">Cart Page</a></div>
+    </div>
+    <form>
+        <label for="otp">Enter OTP</label><br />
+        <input type="number" name="otp" id="otp" placeholder="Enter OTP"><br />
+        <input type="submit" value="Confirm Payment">
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",submitFun);
+
+    function submitFun(event){
+        event.preventDefault();
+        let otp=document.querySelector("#otp").value;
+        if(otp=="1234"){
+            alert("payment successfull..");
+            location.href="cart.html";
+        }else{
+            alert("Invalid OTP");
+            location.href="otp.html";
+        }
+    }
+</script>
